@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+:root{
+  --border-radius: 1rem;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: left;
+  padding: 0 3rem;
+  align-items: center;
+  background-color: #ecedf3;
+}
+input:focus{
+  outline: none;
+}
+.menu{
+  min-height: 50vh;
+  background-color: #fff;
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  margin-right: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu__labels{
+  margin-bottom: 1rem;
+}
+.menu__labels > div:not(:last-of-type){
+  margin-bottom: 0.5rem;
+}
+.menu__labels> div{
+  display: flex;
+}
+.menu__labels label{
+  display: block;
+  width: 70%;
+}
+.menu__labels input{
+  display: block;
+  border: 1px solid #889de2;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  width: 30%;
+}
+.menu__btns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu__btns > button {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  background: #4460ff;
+  width: 59%;
+  border: none;
+  padding:1rem;
+  border-radius: 0.5rem;
+}
+.menu__btns > button:hover{
+  cursor: pointer;
+  background: #2a53d8;;
+}
+.menu__btns > button:not(:last-of-type){
+  margin-bottom: 0.5rem;
+}
+.anpa-container {
+  display: grid;
+  grid-template-columns: repeat(5, 30px);
+  grid-template-rows: repeat(5, 30px);
+  grid-gap: 60px 60px;
+}
+
+.anpa-item {
+  color: #fff;
+justify-content: center;
+  display: flex ;
+   align-items: center;
+  background-color: #686b6d;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.animated{
+  animation: rotate-circle 4s  linear  forwards; 
+}
+
+@keyframes rotate-circle {
+  0%{
+    background: #4460FF;
+  }
+  10% {
+    transform:  translate(0, -45px)
+  }
+  80%{
+    transform:  translate(450px, -45px)
+  }
+  99% {
+    background: #4460FF;
+    transform: translate(450px,0);
+  }
+  100% {
+    background: #686B6D;
+    transform: translate(450px,0);
+  }
+}
