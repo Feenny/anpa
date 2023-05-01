@@ -8,13 +8,19 @@
 //кнопки 
 const start = document.querySelector('.start-btn');
 const stop = document.querySelector('.stop-btn');
-
+console.log("???");
 //АНПА
 const anpa = document.querySelectorAll('.anpa-item')
 
 start.addEventListener('click', () => {
-    console.log("start")
+   
+   document.querySelector('.anpa-container').style.animation='container-move 20s  linear  forwards'; 
+  
+    console.log("???");
+    
     for(let i=1; i<=5; i++){
+       
+
         document.querySelectorAll(`.anpa-item:nth-child(5n+${i})`).forEach((element)=>{
             element.style.animation= ` rotate-circle 4s  linear  forwards ${(i-1)*4}s `
         })
