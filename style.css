@@ -94,14 +94,14 @@ justify-content: center;
   height: 30px;
 }
 
-@keyframes container-move{
+/* @keyframes container-move{
   0% {
     transform:  translateX(0)
   }
   100%{
     transform:  translateX(-450px)
   }
-}
+} */
 @keyframes rotate-circle {
   0%{
     background: #4460FF;
