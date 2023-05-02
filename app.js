@@ -14,9 +14,7 @@ const anpa = document.querySelectorAll('.anpa-item')
 
 start.addEventListener('click', () => {
    
-   document.querySelector('.anpa-container').style.animation='container-move 20s  linear  forwards'; 
-  
-    console.log("???");
+   //    document.querySelector('.anpa-container').style.animation='container-move 20s  linear  forwards'; 
     
     for(let i=1; i<=5; i++){
        
