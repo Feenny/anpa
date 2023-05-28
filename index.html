@@ -11,58 +11,112 @@
     <div class="menu">
       <div class="menu__labels">
         <div class="v-flow">
-          <label for="" class="v-flow__label">Vтечения</label>
-          <input pattern="[0-9]*" title="Пожалуйста, введите числовое значение" type="text" class="v-flow__input">         
+          <label for="" class="v-flow__label">Vтечения, м/с</label>
+          <input
+            pattern="[0-9]*" title="Пожалуйста, введите числовое значение" type="text"
+            value="1" class="v-flow__input"
+          />
         </div>
         <div class="d-Q">
-          <label for="" class="d-Q__label">dQ</label>
-          <input pattern="[0-9]*" title="Пожалуйста, введите числовое значение" type="text" class="d-Q__input">         
+          <label for="" class="d-Q__label">Допус. dQ, м</label>
+          <input
+            pattern="[0-9]*" title="Пожалуйста, введите числовое значение"
+            type="text" value="20"
+            class="d-Q__input"
+          />
         </div>
-        <div class="d-Q">
-          <label for="" class="d-Q__label">R</label>
-          <input pattern="[0-9]*" title="Пожалуйста, введите числовое значение" type="text" class="d-Q__input">         
+        <div class="R">
+          <label for="" class="R__label">Диапазон R, м</label>
+          <input
+            pattern="[0-9]*" title="Пожалуйста, введите числовое значение" type="text"
+            class="R__input"
+          />
         </div>
         <div class="dev-RP">
-          <label for="" class="dev-RP__label">Отклонение от м.т.</label>
-          <input pattern="[0-9]*" title="Пожалуйста, введите числовое значение" type="text" class="dev-RP__input">         
+          <label for="" class="dev-RP__label">Отклонение от м.т., м</label>
+          <input
+            pattern="[0-9]*" title="Пожалуйста, введите числовое значение"
+            type="text" class="dev-RP__input"
+          />
         </div>
         <div class="dist-neigh">
-          <label for="" class="dist-neigh__label">Дистанция до соседа</label>
-          <input pattern="[0-9]*" title="Пожалуйста, введите числовое значение" type="text" class="dist-neigh__input">         
+          <label for="" class="dist-neigh__label">Дистанция до соседа, м</label>
+          <input
+            pattern="[0-9]*" value="40" title="Пожалуйста, введите числовое значение"
+            type="text" class="dist-neigh__input"
+          />
+        </div>
+        <div class="speed">
+          <label for="" class="speed__label">Ускорение воспроизведения</label>
+          <input type="range" min="1" max="5" multiple class="speed__input" />
+        </div>
+        <div class="speed">
+          <label for="" class="speed__label">Корректировка</label>
+          <input type="checkbox" min="1" max="5" multiple class="speed__input" />
         </div>
       </div>
       <div class="menu__btns">
-      <button class="start-btn">Старт</button>
-      <button class="stop-btn">Стоп</button></div>
+        <button class="start-btn">Старт</button>
+        <button class="stop-btn">Стоп</button>
+      </div>
     </div>
-    <div class="anpa-container">
-      
-      <div class="anpa-item group1">1</div>
-      <div class="anpa-item group2">2</div>
-      <div class="anpa-item group3">3</div>
-      <div class="anpa-item group4">4</div>
-      <div class="anpa-item group5">5</div>
-      <div class="anpa-item group1"></div>
-      <div class="anpa-item group2"></div>
-      <div class="anpa-item group3"></div>
-      <div class="anpa-item group4"></div>
-      <div class="anpa-item group5"></div>
-      <div class="anpa-item group1"></div>
-      <div class="anpa-item group2"></div>
-      <div class="anpa-item group3"></div>
-      <div class="anpa-item group4"></div>
-      <div class="anpa-item group5"></div>
-      <div class="anpa-item group1"></div>
-      <div class="anpa-item group2"></div>
-      <div class="anpa-item group3"></div>
-      <div class="anpa-item group4"></div>
-      <div class="anpa-item group5"></div>
-      <div class="anpa-item group1"></div>
-      <div class="anpa-item group2"></div>
-      <div class="anpa-item group3"></div>
-      <div class="anpa-item group4"></div>
-      <div class="anpa-item group5"></div>
+    <div class="anpa-wrapper">
+      <label class="area">1000 м</label>
+      <div class="anpa-container">
+        <div class="anpa-item group1">1</div>
+        <div class="anpa-item group2">2</div>
+        <div class="anpa-item group3">3</div>
+        <div class="anpa-item group4">4</div>
+        <div class="anpa-item group5">5</div>
+        <div class="anpa-item group6">6</div>
+        <div class="anpa-item group7">7</div>
+        <div class="anpa-item group1"></div>
+        <div class="anpa-item group2"></div>
+        <div class="anpa-item group3"></div>
+        <div class="anpa-item group4"></div>
+        <div class="anpa-item group5"></div>
+        <div class="anpa-item group6"></div>
+        <div class="anpa-item group7"></div>
+        <div class="anpa-item group1"></div>
+        <div class="anpa-item group2"></div>
+        <div class="anpa-item group3"></div>
+        <div class="anpa-item group4"></div>
+        <div class="anpa-item group5"></div>
+        <div class="anpa-item group6"></div>
+        <div class="anpa-item group7"></div>
+        <div class="anpa-item group1"></div>
+        <div class="anpa-item group2"></div>
+        <div class="anpa-item group3"></div>
+        <div class="anpa-item group4"></div>
+        <div class="anpa-item group5"></div>
+        <div class="anpa-item group6"></div>
+        <div class="anpa-item group7"></div>
+        <div class="anpa-item group1"></div>
+        <div class="anpa-item group2"></div>
+        <div class="anpa-item group3"></div>
+        <div class="anpa-item group4"></div>
+        <div class="anpa-item group5"></div>
+        <div class="anpa-item group6"></div>
+        <div class="anpa-item group7"></div>
+        <div class="anpa-item group1"></div>
+        <div class="anpa-item group2"></div>
+        <div class="anpa-item group3"></div>
+        <div class="anpa-item group4"></div>
+        <div class="anpa-item group5"></div>
+        <div class="anpa-item group6"></div>
+        <div class="anpa-item group7"></div>
+        <div class="anpa-item group1"></div>
+        <div class="anpa-item group2"></div>
+        <div class="anpa-item group3"></div>
+        <div class="anpa-item group4"></div>
+        <div class="anpa-item group5"></div>
+        <div class="anpa-item group6"></div>
+        <div class="anpa-item group7"></div>
+      </div>
     </div>
+    <div class="graph1"></div>
+    <div class="graph2"></div>
+    <div class="graph3"></div>
     <script src="app.js"></script>
   </body>
 </html>
